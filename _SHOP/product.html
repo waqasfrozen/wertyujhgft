@@ -1,0 +1,221 @@
+<!-- We don't need full layout here, because this page will be parsed with Ajax-->
+<div class="pages navbar-fixed">
+    <!-- Page, data-page contains page name-->
+    <div data-page="product" class="page">
+        <!-- Top Navbar-->
+        <div class="navbar no-border primary-bg">
+            <div class="navbar-inner">
+                <div class="left">
+                    <a href="#" class="link icon-only back"><i class="uiicon-left222"></i></a>
+                    <a href="#" class="link icon-only open-panel" data-panel="left"><i class="uiicon-list91"></i></a>
+                    <div class="page-name">Product</div>
+                </div>
+
+                <div class="right">
+                    <a href="#" class="link icon-only header-search-icon"><i class="uiicon-magnifying55"></i></a>
+                    <a href="#" class="link icon-only open-panel header-shop-icon" data-panel="right"><i class="uiicon-shopping238"></i><span>5</span></a>
+                </div>
+
+                <form method="get" action="https://mobius.studio/themes/sweipe/_SHOP/product.html?" class="tc-header-search list-block">
+                    <div class="item-input item-input-field">
+                        <input type="text" placeholder="Search..." class="" required>
+                    </div>
+                    <button type="submit"></button>
+                </form>
+            </div>
+        </div>
+        <!-- Scrollable page content-->
+        <div class="page-content">
+            <!-- Slider container -->
+            <div class="swiper-container swiper-init" data-autoplay="5000" data-speed="400" data-pagination=".swiper-pagination">
+                <div class="swiper-pagination light"></div>
+                <!-- Slides wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="photos/shop/list/care.html" alt=""/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/shop/list/bag.html" alt=""/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/shop/list/chair.html" alt=""/>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="photos/shop/list/spray.html" alt=""/>
+                    </div>
+                </div>
+            </div><!-- .swiper-container | ENDS -->
+            <div class="toolbar tabbar top-0">
+                <div class="toolbar-inner"><a href="#info-tab" class="active tab-link">Info</a><a href="#customization-tab" class="tab-link">Customization</a><a href="#reviews-tab" class="tab-link">Reviews</a></div>
+            </div>
+            <div class="tabs-animated-wrap">
+                <div class="tabs">
+                    <div id="info-tab" class="page-content tab active">
+                        <div class="content-block">
+                            <h2 class="margin-bottom-0">Product Name</h2>
+                            <span><strong>Price: </strong>350.90 $ <strike>420.90 $</strike></span>
+                            <div class="tc-divider dark"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum mi quis felis scelerisque faucibus. Aliquam ut commodo justo. Mauris vitae pharetra arcu. Sed tincidunt dui et nibh auctor pretium. Nam accumsan fermentum sem. Suspendisse potenti. Nulla sed orci malesuada.</p>
+                        </div>
+                    </div>
+                    <div id="customization-tab" class="page-content tab">
+                        <div class="content-block">
+                            <h4>Sizes</h4>
+                            <div class="clearfix">
+                                <div class="tc-size-radio">
+                                    <input id="cart-size-xs" type="radio" name="size" value="XS">
+                                    <label for="cart-size-xs">XS</label>
+                                </div>
+                                <div class="tc-size-radio">
+                                    <input id="cart-size-s" type="radio" name="size" value="S">
+                                    <label for="cart-size-s">S</label>
+                                </div>
+                                <div class="tc-size-radio">
+                                    <input id="cart-size-m" type="radio" name="size" value="M">
+                                    <label for="cart-size-m">M</label>
+                                </div>
+                                <div class="tc-size-radio">
+                                    <input id="cart-size-l" type="radio" name="size" value="L">
+                                    <label for="cart-size-l">L</label>
+                                </div>
+                                <div class="tc-size-radio">
+                                    <input id="cart-size-xl" type="radio" name="size" value="XL">
+                                    <label for="cart-size-xl">XL</label>
+                                </div>
+                                <div class="tc-size-radio">
+                                    <input id="cart-size-xxl" type="radio" name="size" value="XXL">
+                                    <label for="cart-size-xxl">XXL</label>
+                                </div>
+                            </div>
+
+                            <h4>Color</h4>
+                            <div class="clearfix">
+                                <div class="tc-color-radio">
+                                    <input id="cart-color-red" type="radio" name="color" value="red">
+                                    <label class="bg-red" for="cart-color-red"><i class="uiicon-web39"></i></label>
+                                </div>
+                                <div class="tc-color-radio">
+                                    <input id="cart-color-purple" type="radio" name="color" value="purple">
+                                    <label class="bg-purple" for="cart-color-purple"><i class="uiicon-web39"></i></label>
+                                </div>
+                                <div class="tc-color-radio">
+                                    <input id="cart-color-blue" type="radio" name="color" value="blue">
+                                    <label class="bg-blue" for="cart-color-blue"><i class="uiicon-web39"></i></label>
+                                </div>
+                                <div class="tc-color-radio">
+                                    <input id="cart-color-teal" type="radio" name="color" value="teal">
+                                    <label class="bg-teal" for="cart-color-teal"><i class="uiicon-web39"></i></label>
+                                </div>
+                                <div class="tc-color-radio">
+                                    <input id="cart-color-deeporange" type="radio" name="color" value="deeporange">
+                                    <label class="bg-deeporange" for="cart-color-deeporange"><i class="uiicon-web39"></i></label>
+                                </div>
+                                <div class="tc-color-radio">
+                                    <input id="cart-color-black" type="radio" name="color" value="black">
+                                    <label class="bg-black" for="cart-color-black"><i class="uiicon-web39"></i></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="reviews-tab" class="page-content tab">
+                        <div class="content-block">
+                            <h3>Send a Review</h3>
+                            <p>Use the form below to enter your thought about this product and share it with others to help everyone.</p>
+                            <form method="post" action="https://mobius.studio/themes/sweipe/_SHOP/product.html?" class="list-block inputs-list">
+                                <ul>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-title label">Stars</div>
+                                                <div class="item-input">
+                                                    <div class="range-slider">
+                                                        <input type="range" min="1" max="5" value="3" step="1"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="item-inner">
+                                                <div class="item-input">
+                                                    <textarea name="details" class="resizable" placeholder="Write your review here..." required></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="buttons-row"><button class="button button-raised button-fill color-green" type="submit">Send</button></p>
+                                    </li>
+                                </ul>
+                            </form><!-- .list-block | ENDS -->
+
+                            <div class="tc-divider dark"></div>
+
+                            <div class="tc-comment-item">
+                                <small class="block clearfix">
+                                    <span>15 June 2015</span>
+                                    <div class="stars">
+                                        <i class="uiicon-web39 color-orange"></i>
+                                        <i class="uiicon-web39 color-orange"></i>
+                                        <i class="uiicon-web39 color-orange"></i>
+                                        <i class="uiicon-web39 color-orange"></i>
+                                        <i class="uiicon-web39"></i>
+                                    </div>
+                                </small>
+                                <h4>Mark Thompson</h4>
+                                <p>Maecenas cursus efficitur purus, sit amet porttitor sem tincidunt sit amet. In sit amet urna bibendum augue ultricies dictum vulputate ac orci.</p>
+                            </div><!-- .tc-comment-item | ENDS -->
+
+                            <div class="tc-comment-item child">
+                                <small class="block clearfix">
+                                    <span>16 January 2015</span>
+                                    <div class="stars">
+                                        <i class="uiicon-web39 color-orange"></i>
+                                        <i class="uiicon-web39 color-orange"></i>
+                                        <i class="uiicon-web39 color-orange"></i>
+                                        <i class="uiicon-web39"></i>
+                                        <i class="uiicon-web39"></i>
+                                    </div>
+                                </small>
+                                <h4>Jane Thompson</h4>
+                                <p>Maecenas cursus efficitur purus, sit amet porttitor sem tincidunt sit amet. In sit amet.</p>
+                            </div><!-- .tc-comment-item | ENDS -->
+
+                            <div class="tc-comment-item">
+                                <small class="block clearfix">
+                                    <span>15 June 2015</span>
+                                    <div class="stars">
+                                        <i class="uiicon-web39 color-orange"></i>
+                                        <i class="uiicon-web39"></i>
+                                        <i class="uiicon-web39"></i>
+                                        <i class="uiicon-web39"></i>
+                                        <i class="uiicon-web39"></i>
+                                    </div>
+                                </small>
+                                <h4>Valerie Pickle</h4>
+                                <p>Maecenas cursus efficitur purus, sit amet porttitor sem tincidunt sit amet. In sit amet urna bibendum augue ultricies dictum vulputate ac orci.</p>
+                            </div><!-- .tc-comment-item | ENDS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-block tc-footer text-center primary-bg margin-top-0">
+                <div class="content-block-inner">
+                    <span>Copyright 2015 by ThemingCool</span>
+                    <div>
+                        <a href="#" class="external tc-icon-ball socialicon-facebook43 color-facebook"></a>
+                        <a href="#" class="external tc-icon-ball socialicon-google109 color-google"></a>
+                        <a href="#" class="external tc-icon-ball socialicon-twitter34 color-twitter"></a>
+                        <a href="#" class="external tc-icon-ball socialicon-pinterest26 color-pinterest"></a>
+                        <a href="#" class="external tc-icon-ball socialicon-dribbble11 color-dribbble"></a>
+                    </div>
+                </div><!-- .content-block-inner | ENDS -->
+            </div><!-- .tc-footer | ENDS -->
+        </div><!-- .page-content | ENDS -->
+
+        <a href="#" class="floating-button color-orange open-popover" data-popover=".popover-links"><i class="uiicon-shopping238"></i></a>
+    </div><!-- .page | ENDS -->
+</div><!-- .pages | ENDS -->
