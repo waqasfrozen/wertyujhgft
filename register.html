@@ -1,0 +1,52 @@
+<div class="pages navbar-fixed">
+    <div data-page="login" class="page bg-2">
+        <div class="navbar no-border transparent">
+            <div class="navbar-inner">
+                <div class="left">
+                    <div class="page-name">Bid Lagao!</div>
+                </div>
+            </div>
+        </div>
+        <!-- Scrollable page content-->
+        <div class="page-content vh-center">
+            <div class="content-block">
+                <form id="loginForm" class="list-block">
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="uiicon-email108"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-input item-input-field">
+                                <input required type="text" id="username" placeholder="E-Mail">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="uiicon-locked60"></i>
+                        </div>
+                        <div class="item-inner">
+                            <div class="item-input item-input-field">
+                                <input type="password" required id="pwd" placeholder="Password">
+                            </div>
+                        </div>
+                    </div>
+                    <p class="buttons-row">
+                        <button onclick="doRegister()" class="button button-raised button-fill color-green" type="button">Login</button>
+                    </p>
+                    <p class="buttons-row">
+                        <a class="button text-left" href="#">
+                            <small><i class="uiicon-keyring"></i>Forgot Password</small>
+                        </a>
+                        <a class="button text-right" href="register.html">
+                            <small><i class="uiicon-right246"></i>Create Account</small>
+                        </a>
+                    </p>
+
+                    <p class="error"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

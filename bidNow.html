@@ -1,0 +1,121 @@
+
+<div class="pages navbar-fixed">
+    <div data-page="login" class="page ">
+        <div class="navbar no-border primary-bg">
+            <div class="navbar-inner">
+                <div class="left">
+                    <a href="#" class="link icon-only back"><i class="uiicon-left222"></i></a>
+                    <a href="#" class="link icon-only open-panel" data-panel="left"><i class="uiicon-list91"></i></a>
+                    <div class="page-name">My Bids</div>
+                </div>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="content-block">
+                <div class="row">
+                    <div class="col-100">
+                        <div class="content-block-inner">
+                            <div class="tc-title-1">
+                                <h2 class="title">Today's Item</h2>
+                                <h5 class="sub-title small-heading">Bids now to get it at discounted price</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-block">
+                <div class="swiper-container swiper-init" data-autoplay="5000" data-speed="400" data-space-between="0" data-next-button=".swiper-next" data-prev-button=".swiper-prev">
+                    <div id="bidItemImages" class="swiper-wrapper">
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-prev"><i class="uiicon-left222"></i></div>
+                    <div class="swiper-next"><i class="uiicon-left222"></i></div>
+                </div>
+
+
+                <div class="row">
+                    <div class="toolbar tabbar top-0">
+                        <div class="toolbar-inner">
+                            <a href="#info-tab" class="active tab-link">Product Info</a>
+                            <a href="#reviews-tab" class="tab-link">Product Bids</a>
+                            <span class="tab-link-highlight" style="width: 33.3333%; transform: translate3d(0%, 0px, 0px);"></span>
+                        </div>
+                    </div>
+                    <div class="tabs-animated-wrap">
+                        <div class="tabs">
+                            <div id="info-tab" class="page-content tab active">
+                                <div class="content-block">
+                                    <input type="hidden" id="itemId"/>
+                                    <h2 class="margin-bottom-0" id="itemName">Product Name</h2>
+                                    <span><strong>Price: </strong><span id="itemStarting">350.90 $</span></span>
+                                    <div class="tc-divider dark"></div>
+                                    <p id="itemDesc">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum
+                                        mi quis felis scelerisque faucibus. Aliquam ut commodo justo. Mauris vitae
+                                        pharetra arcu. Sed tincidunt dui et nibh auctor pretium. Nam accumsan fermentum
+                                        sem. Suspendisse potenti. Nulla sed orci malesuada.
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="reviews-tab" class="page-content tab">
+                                <div class="content-block">
+                                    <h3>Bid Now</h3>
+                                    <p>Use the most unique bid to increase your chances of winning this amazing product.</p>
+                                    <form class="list-block inputs-list">
+                                        <ul>
+                                            <li>
+                                                <div class="item-content">
+                                                    <div class="item-inner">
+                                                        <div class="item-input item-input-field">
+                                                            <textarea name="details" class="resizable" id="bidAmount" placeholder="Enter Amount" required=""></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <p class="buttons-row">
+                                                    <button onclick="placeBid()" class="button button-raised button-fill color-green" type="button">Bid Now!</button>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </form>
+
+                                    <div class="tc-divider dark"></div>
+                                    <div id="itemBidsss">
+                                        <div class="tc-comment-item">
+                                            <small class="block clearfix">
+                                                <span>15 June 2015</span>
+                                            </small>
+                                            <h4>Mark Thompson</h4>
+                                            <p>Maecenas cursus efficitur purus, sit amet porttitor sem tincidunt sit amet. In sit amet urna bibendum augue ultricies dictum vulputate ac orci.</p>
+                                        </div>
+                                        <div class="tc-comment-item">
+                                            <small class="block clearfix">
+                                                <span>15 June 2015</span>
+                                            </small>
+                                            <h4>Valerie Pickle</h4>
+                                            <p>Maecenas cursus efficitur purus, sit amet porttitor sem tincidunt sit amet. In sit amet urna bibendum augue ultricies dictum vulputate ac orci.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-block tc-footer text-center primary-bg">
+                    <div class="content-block-inner">
+                        <span>Copyright 2016 by BidLagao</span>
+                        <div>
+                            <a href="#" class="external tc-icon-ball socialicon-facebook43 color-facebook"></a>
+                            <a href="#" class="external tc-icon-ball socialicon-google109 color-google"></a>
+                            <a href="#" class="external tc-icon-ball socialicon-twitter34 color-twitter"></a>
+                            <a href="#" class="external tc-icon-ball socialicon-pinterest26 color-pinterest"></a>
+                            <a href="#" class="external tc-icon-ball socialicon-dribbble11 color-dribbble"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
