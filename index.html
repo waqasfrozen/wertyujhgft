@@ -83,13 +83,13 @@
                 <div class="page-content">
                     <div class="swiper-container swiper-init" data-autoplay="5000" data-speed="400" data-space-between="0" data-next-button=".swiper-next" data-prev-button=".swiper-prev">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="img/slider1.jpg" alt=""/>
-                                <div class="tc-slider-caption-1">
-                                    <h1>Hello!</h1>
-                                    <h2>Welcome to BidLagao!</h2>
-                                </div>
-                            </div>
+                            <!--<div class="swiper-slide">-->
+                                <!--<img src="img/slider1.jpg" alt=""/>-->
+                                <!--<div class="tc-slider-caption-1">-->
+                                    <!--<h1>Hello!</h1>-->
+                                    <!--<h2>Welcome to BidLagao!</h2>-->
+                                <!--</div>-->
+                            <!--</div>-->
                             <div class="swiper-slide">
                                 <img src="img/slider2.jpg" alt=""/>
                                 <div class="tc-slider-caption-1 text-center">
@@ -303,16 +303,22 @@
     setInterval(function() {
         var check = window.location.hash;
         if(location.href != oldLocation) {
+//            $(".views").css("display","none");
+//            $(".tc-loading-screen").css("visibility","visible");
+//            $(".tc-loading-screen").css("opacity","0.9");
             if(check == "#/myBids.html"){
                 $.post(urlToPass+ "dashboard/applicationAjaxCalls/myBids",{email:userJson[0].email,pass:userJson[0].pass},function(e){
                     $("#myBidss").html(e);
+//                    showPage();
                 })
                 $.post(urlToPass+ "dashboard/applicationAjaxCalls/myBidsRemaining",{email:userJson[0].email,pass:userJson[0].pass},function(e){
                     $("#myBidsRemaining").html(e);
+//                    showPage();
                 })
             }else if(check == "#/myWinnings.html"){
                 $.post(urlToPass+ "dashboard/applicationAjaxCalls/myWinnings",{email:userJson[0].email,pass:userJson[0].pass},function(e){
                     $("#myWinnings").html(e);
+//                    showPage();
                 })
             }
             oldLocation = location.href
@@ -322,27 +328,36 @@
             getItemDetail();
             getItemBids();
         }
+        if(check == "" || check == "#/contact.html"){
+//            showPage();
+        }
     }, 1000);
     $(window).load(function(){
         setTimeout(function(){
             $(".views").css("display","");
-            $(".tc-loading-screen").css("visibility","hidden")
-            $(".tc-loading-screen").css("opacity","0")
+            $(".tc-loading-screen").css("visibility","hidden");
+            $(".tc-loading-screen").css("opacity","0");
             ////////////////////////////////////////////////////////////
             if((userValidity == "" || userValidity == null) && check != '#/login.html'){
                 window.location = currentUrl + "#/login.html";
                 window.location.reload();
             }else{
+                if(check == ""){
+//                    showPage();
+                }
                 if(check == "#/myBids.html"){
                     $.post(urlToPass+ "dashboard/applicationAjaxCalls/myBids",{email:userJson[0].email,pass:userJson[0].pass},function(e){
                         $("#myBidss").html(e);
+//                        showPage();
                     })
                     $.post(urlToPass+ "dashboard/applicationAjaxCalls/myBidsRemaining",{email:userJson[0].email,pass:userJson[0].pass},function(e){
                         $("#myBidsRemaining").html(e);
+//                        showPage();
                     })
                 }else if(check == "#/myWinnings.html"){
                     $.post(urlToPass+ "dashboard/applicationAjaxCalls/myWinnings",{email:userJson[0].email,pass:userJson[0].pass},function(e){
                         $("#myWinnings").html(e);
+//                        showPage();
                     })
                 }else if(check == "#/bidNow.html"){
                     getItem();
@@ -358,7 +373,12 @@
     });
 </script>
 <script>
-    var urlToPass = "http://192.168.0.102/ali4/";
+    var urlToPass = "http://demo.bidlagao.com/";
+    function showPage(){
+        $(".views").css("display","");
+        $(".tc-loading-screen").css("visibility","hidden");
+        $(".tc-loading-screen").css("opacity","0");
+    }
     function logout(){
         window.localStorage.removeItem("userAdmin");
         window.location.reload();
@@ -409,6 +429,7 @@
     function getItem(){
         $.post(urlToPass+ "dashboard/applicationAjaxCalls/todaysItemImages",{},function(e){
             $("#bidItemImages").html(e);
+            showPage();
         })
     }
     function getItemDetail(){
