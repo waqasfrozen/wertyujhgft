@@ -219,7 +219,8 @@ html.pixel-ratio-2 .input-field:after, html.pixel-ratio-2 .item-input-field:afte
 }
 
 .swiper-next i, .swiper-prev i {
-    font-size: 15px
+    font-size:30px;
+    color:black;
 }
 
 .swiper-prev {
