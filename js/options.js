@@ -98,14 +98,14 @@
         nrFilters: function () {
             $('.nr-filter').each(function () {
                 var input = $(this).find('input'),
-                    substract = $(this).find('.substract'),
+                    subtract = $(this).find('.subtract'),
                     add = $(this).find('.add');
 
                 add.on('click', function () {
                     input.val(Math.max(1, parseInt(input.val()) + 1));
                 });
 
-                substract.on('click', function () {
+                subtract.on('click', function () {
                     input.val(Math.max(1, parseInt(input.val()) - 1));
                 });
             });
